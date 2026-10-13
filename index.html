@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff3f4">
+  <meta name="description" content="Un pequeño regalo hecho con amor para ti.">
+  <title>Para mi persona favorita ❤️</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Corazones flotantes -->
+  <div id="hearts-layer" aria-hidden="true"></div>
+
+  <!-- Pantalla de bienvenida -->
+  <section id="loader" class="loader-screen">
+    <div class="loader-content">
+      <p class="eyebrow">UN PEQUEÑO REGALO PARA TI</p>
+      <h1>He preparado algo<br>con mucho amor</h1>
+
+      <button id="heart-loader" class="heart-loader"
+        aria-label="Abrir mi regalo">
+        <i class="bi bi-heart-fill"></i>
+        <span class="heart-sparkle">✦</span>
+      </button>
+
+      <p id="loader-message" class="loader-message">
+        Toca el corazón para comenzar
+      </p>
+
+      <div class="progress-track">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+      <span id="progress-label">0%</span>
+    </div>
+  </section>
+
+  <!-- Página principal -->
+  <main id="main-content" class="hidden">
+
+    <!-- Portada -->
+    <header class="hero section-padding">
+      <span class="floating-decoration decoration-one">♡</span>
+      <span class="floating-decoration decoration-two">✦</span>
+
+      <p class="eyebrow">HOY ES UN DÍA MUY ESPECIAL</p>
+
+      <div class="hero-heart">♥</div>
+
+      <h1>Feliz cumpleaños<br>
+        <span>a mi persona favorita</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Hoy celebro tu vida y la suerte de tenerte en la mía.
+      </p>
+
+      <div class="date-pill">
+        <i class="bi bi-calendar-heart"></i>
+        <span id="birthday-date">Tu día especial</span>
+      </div>
+
+      <a class="scroll-cue" href="#memories">
+        <span>Hay algo que quiero mostrarte</span>
+        <i class="bi bi-chevron-down"></i>
+      </a>
+    </header>
+
+    <!-- Carrusel de recuerdos -->
+    <section id="memories" class="section-padding memories-section">
+      <div class="section-heading">
+        <span class="eyebrow">PEQUEÑOS INSTANTES, GRANDES RECUERDOS</span>
+        <h2>Nuestra historia<br>en fotografías</h2>
+        <p>Cada foto guarda un pedacito de lo feliz que me haces.</p>
+      </div>
+
+      <div class="carousel">
+        <button id="prev-photo" class="carousel-arrow"
+          aria-label="Foto anterior">
+          <i class="bi bi-chevron-left"></i>
+        </button>
+
+        <div class="polaroid-stage">
+          <article class="polaroid" id="polaroid">
+            <img id="carousel-image" src="assets/foto1.jpg"
+              alt="Un recuerdo especial juntos">
+            <p id="carousel-caption">Un momento para recordar ♡</p>
+          </article>
+        </div>
+
+        <button id="next-photo" class="carousel-arrow"
+          aria-label="Foto siguiente">
+          <i class="bi bi-chevron-right"></i>
+        </button>
+      </div>
+
+      <div id="carousel-dots" class="carousel-dots"
+        aria-label="Seleccionar fotografía"></div>
+
+      <p class="small-note">Desliza las fotos y vuelve a sonreír ❤️</p>
+    </section>
+
+    <!-- Carta -->
+    <section id="letter-section" class="section-padding letter-section">
+      <div class="section-heading">
+        <span class="eyebrow">ALGO QUE QUIERO DECIRTE</span>
+        <h2>Una carta para ti</h2>
+        <p>Hay cosas que merecen escribirse con el corazón.</p>
+      </div>
+
+      <button id="envelope" class="envelope"
+        aria-label="Abrir la carta de cumpleaños"
+        aria-expanded="false">
+        <div class="letter-paper">
+          <div class="letter-content">
+            <p class="letter-kicker">PARA TI, MI AMOR</p>
+            <h3>Mi persona favorita</h3>
+
+            <p>
+              Feliz cumpleaños, mi amor. ❤️
+            </p>
+            <p>
+              Hoy quiero recordarte lo especial que eres para mí.
+              Gracias por cada sonrisa, cada abrazo, cada conversación
+              y por todos esos pequeños momentos que contigo se
+              convierten en algo inolvidable.
+            </p>
+            <p>
+              Deseo que este nuevo año de tu vida te regale salud,
+              tranquilidad, sueños cumplidos y muchísimas razones
+              para sonreír. Quiero seguir acompañándote, celebrar
+              tus logros y construir contigo muchos recuerdos más.
+            </p>
+            <p>
+              Si pudiera pedir un deseo hoy, sería que la vida te
+              devuelva multiplicada toda la felicidad que tú me das.
+            </p>
+
+            <p class="letter-signature">
+              Con todo mi amor,<br>
+              <span>Tu persona especial ♥</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="envelope-back"></div>
+        <div class="envelope-pocket"></div>
+        <div class="envelope-flap"></div>
+        <div class="envelope-seal">♥</div>
+      </button>
+
+      <p id="envelope-hint" class="small-note">
+        <i class="bi bi-envelope-heart"></i>
+        Toca el sobre para descubrir tu carta
+      </p>
+    </section>
+
+    <!-- Contador de relación -->
+    <section id="our-time" class="section-padding time-section">
+      <div class="section-heading">
+        <span class="eyebrow">DESDE QUE COMENZÓ LO NUESTRO</span>
+        <h2>Mi tiempo favorito<br>es contigo</h2>
+        <p>Y cada segundo a tu lado hace más bonita la historia.</p>
+      </div>
+
+      <div class="time-card">
+        
+<div class="time-grid">
+  <div class="time-unit">
+    <strong id="years">0</strong>
+    <span>Años</span>
+  </div>
+
+  <div class="time-unit">
+    <strong id="months">0</strong>
+    <span>Meses</span>
+  </div>
+
+  <div class="time-unit">
+    <strong id="days">0</strong>
+    <span>Días</span>
+  </div>
+
+  <div class="time-unit">
+    <strong id="hours">0</strong>
+    <span>Horas</span>
+  </div>
+
+  <div class="time-unit">
+    <strong id="minutes">0</strong>
+    <span>Minutos</span>
+  </div>
+
+  <div class="time-unit">
+    <strong id="seconds">0</strong>
+    <span>Segundos</span>
+  </div>
+</div>
+
+
+        <div class="time-divider"><span>♥</span></div>
+        <p class="time-message">
+          Y si volviera a empezar, volvería a elegirte.
+        </p>
+      </div>
+    </section>
+
+    <!-- Foto especial -->
+    <section class="section-padding special-section">
+      <div class="special-photo-wrap">
+        <img src="assets/foto-especial.jpg"
+          alt="Una fotografía de mi persona favorita"
+          class="special-photo">
+        <span class="photo-heart">♥</span>
+      </div>
+
+      <p class="eyebrow">MI LUGAR FAVORITO</p>
+      <h2>Qué bonito coincidir<br>contigo en esta vida.</h2>
+      <p class="special-phrase">
+        De todas las casualidades del mundo, tú eres mi favorita.
+      </p>
+
+      <div class="final-love">Te quiero muchísimo <span>♥</span></div>
+    </section>
+
+    <!-- Pie -->
+    <footer class="footer">
+      <p>Hecho con amor, especialmente para ti.</p>
+      <span>♥ Siempre tú ♥</span>
+    </footer>
+
+  </main>
+
+  <!-- Música: se inicia al tocar el corazón -->
+  <audio id="background-music" loop preload="auto">
+    <source src="assets/cancion.mp3" type="audio/mpeg">
+  </audio>
+
+  <button id="music-toggle" class="music-toggle hidden"
+    aria-label="Activar o pausar música" aria-pressed="false">
+    <i class="bi bi-volume-up-fill"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
