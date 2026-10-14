@@ -41,7 +41,11 @@ const CONFIG = {
     },{
       src: "assets/foto8.jpg",
       caption: "Y todavía nos quedan tantos momentos"
+    },{
+      src: "assets/foto9.jpg",
+      caption: "Un beso de amor"
     }
+
   ],
 
   heartInterval: 850
