@@ -220,9 +220,19 @@
         <img src="assets/foto-especial.jpg"
           alt="Una fotografía de mi persona favorita"
           class="special-photo">
-        <span class="photo-heart">♥</span>
+        <span class="photo-heart" id="secretoBtn" class="secreto-trigger" onclick="mostrarSecreto()">♥</span>
       </div>
-
+      <!-- Tarjeta emergente -->
+      <div id="secretoPopup" class="secreto-popup" aria-hidden="true">
+         <!--<div class="secreto-iconos">-->
+          <img id="secretoPopup" src="assets/secreto.png">
+          <!--  
+          <span class="secreto-emoji">🤫</span>
+          <span class="secreto-anillo">💍</span>
+          -->
+         <!-- </div>-->
+         <!-- <div class="secreto-texto">Shhh...</div> -->
+      </div>
       <p class="eyebrow">MI LUGAR FAVORITO</p>
       <h2>Qué bonito coincidir<br>contigo en esta vida.</h2>
       <p class="special-phrase">
@@ -250,6 +260,6 @@
     <i class="bi bi-volume-up-fill"></i>
   </button>
 
-  <script src="script.js"></script>
+ <script src="script.js?v=20261014"></script>
 </body>
 </html>
