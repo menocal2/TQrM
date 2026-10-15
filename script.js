@@ -5,6 +5,7 @@
    PERSONALIZACIÓN
    Usa el formato AAAA-MM-DD para las fechas.
 ========================================= */
+let secretoTimer;
 
 const CONFIG = {
   birthdayDate: "2026-10-14",
@@ -483,4 +484,17 @@ function initReveals() {
     element.classList.add("reveal");
     observer.observe(element);
   });
+}
+
+function mostrarSecreto() {
+  const popup = document.getElementById("secretoPopup");
+
+  clearTimeout(secretoTimer);
+  popup.classList.add("visible");
+  popup.setAttribute("aria-hidden", "false");
+
+  secretoTimer = setTimeout(() => {
+    popup.classList.remove("visible");
+    popup.setAttribute("aria-hidden", "true");
+  }, 3000);
 }
